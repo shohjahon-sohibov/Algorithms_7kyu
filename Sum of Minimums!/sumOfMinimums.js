@@ -21,3 +21,10 @@ Note =========
 // Answer
 
 
+function sumOfMinimums(arr) {
+    let result = 0
+    for (let  i = 0; i < arr.length; i++) {
+    result += arr[i].sort((a, b) => a - b)[0]
+    }
+    return result
+}
