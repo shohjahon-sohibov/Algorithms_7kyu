@@ -1,6 +1,6 @@
 /* 
 Title =========
-
+    Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
 
 Task =======
     You will be given an array of objects (hashes in ruby) representing data about developers who have signed up to attend the coding meetup that you are organising for the first time.
@@ -30,3 +30,11 @@ Note ===========
 
 // Answer
 
+function countDevelopers(list) {
+    let count = 0
+    let filtered = list.filter((el) => {
+      if (el.continent === "Europe" && el.language === "JavaScript")
+        return count++
+    })
+    return count
+  }
