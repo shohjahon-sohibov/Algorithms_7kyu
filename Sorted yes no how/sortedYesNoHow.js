@@ -16,3 +16,7 @@ Note ======
 
 // Answer
 
+function isSortedAndHow(arr) {
+    return arr.every((e, i) => i == 0 || arr[i] >= arr[i - 1]) ? 'yes, ascending' :
+           arr.every((e, i) => i == 0 || arr[i] <= arr[i - 1]) ? 'yes, descending' : 'no' 
+  }
