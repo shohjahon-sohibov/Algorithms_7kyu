@@ -18,4 +18,3 @@ function evenNumbers(arr, number) {
     let a = arr.filter((el) => el % 2 === 0)
      return a.slice(-number)
  }
-
