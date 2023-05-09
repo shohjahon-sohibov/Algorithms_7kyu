@@ -17,3 +17,15 @@ Example ========
 
 // Answer
 
+function adjacentElementsProduct(arr) {
+    let maxProduct = [];
+    for (let i = 0; i < arr.length; i++) {
+      let firstNum = arr[i];
+      let secondNum = arr[i + 1];
+      let multiplying = firstNum * secondNum
+      
+      maxProduct.push(multiplying)
+    }
+    maxProduct.splice(arr.length - 1)
+    return Math.max(...maxProduct)
+  }
