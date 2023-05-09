@@ -28,3 +28,7 @@ Notes =========
 
 // Answer
 
+const isRubyComing = (list) => list.some((el) => el.language === 'Ruby')
+
+
+// Codewars: https://www.codewars.com/kata/5827acd5f524dd029d0005a4/train/javascript
